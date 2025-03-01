@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Machine Learning with Python</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html">MSI</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <header class="post-header">
+            <h1>Introduction to Machine Learning with Python</h1>
+            <div class="post-meta">
+                <span>February 28, 2025</span>
+                <span>12 min read</span>
+                <span>Python, Machine Learning, scikit-learn</span>
+            </div>
+        </header>
+
+        <div class="post-content">
+            <h2>Getting Started with Machine Learning</h2>
+            <p>Machine Learning has become an essential skill for modern developers. In this tutorial, we'll explore the basics using Python and scikit-learn.</p>
+
+            <h2>1. Setting Up Your Environment</h2>
+            <pre><code class="language-python">
+# Install required packages
+pip install numpy pandas scikit-learn matplotlib
+
+# Import necessary libraries
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+            </code></pre>
+
+            <h2>2. Loading and Preparing Data</h2>
+            <pre><code class="language-python">
+# Load your dataset
+data = pd.read_csv('dataset.csv')
+
+# Split features and target
+X = data.drop('target', axis=1)
+y = data['target']
+
+# Split into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+            </code></pre>
+
+            <h2>3. Training Your First Model</h2>
+            <pre><code class="language-python">
+# Initialize the model
+model = LogisticRegression()
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Make predictions
+predictions = model.predict(X_test)
+
+# Evaluate the model
+accuracy = model.score(X_test, y_test)
+print(f'Model Accuracy: {accuracy:.2f}')
+            </code></pre>
+        </div>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+</body>
+</html>
