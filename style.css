@@ -317,6 +317,46 @@ nav {
     font-size: 0.9rem;
 }
 
+/* Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 2rem;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+}
+
+.post-meta {
+    color: #888;
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--hover-color);
+}
+
+.back-button i {
+    font-size: 0.9rem;
+}
+
 /* Projects Section */
 .projects-section {
     padding: 6rem 2rem;
