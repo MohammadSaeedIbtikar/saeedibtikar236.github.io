@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Saeed Ibtikar - Portfolio</title>
+    <meta name="description" content="Mohammad Saeed Ibtikar - Full Stack Developer Portfolio | Expertise in JavaScript, Python, and Machine Learning">
+    <meta name="keywords" content="full stack developer, web development, JavaScript, Python, Machine Learning, portfolio">
+    <meta name="author" content="Mohammad Saeed Ibtikar">
+    <meta property="og:title" content="Mohammad Saeed Ibtikar - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Experienced Full Stack Developer specializing in modern web technologies and machine learning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohammadsaeedibtikar.github.io/saeedibtikar236.github.io">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammad Saeed Ibtikar",
+        "url": "https://mohammadsaeedibtikar.github.io/saeedibtikar236.github.io",
+        "jobTitle": "Full Stack Developer",
+        "knowsAbout": ["JavaScript", "Python", "Machine Learning", "Web Development"],
+        "alumniOf": "Your University"
+    }
+    </script>
+
+    <title>Mohammad Saeed Ibtikar - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,166 +33,699 @@
     <div id="particles-js"></div>
     
     <!-- Navigation -->
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="nav-content">
             <div class="logo">
-                <a href="#home">MSI</a>
+                <a href="#home" aria-label="Home">MSI</a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+                <li><a href="#about" aria-label="Go to About section">About</a></li>
+                <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+                <li><a href="#experience" aria-label="Go to Experience section">Experience</a></li>
+                <li><a href="#blog" aria-label="Go to Blog section">Blog</a></li>
+                <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+                <li><a href="#ai-tools" aria-label="Go to AI Tools section">AI Tools</a></li>
+                <li><a href="#learning-hub" aria-label="Go to Learning Hub section">Learning Hub</a></li>
+                <li><a href="#learning-resources" aria-label="Go to Learning Resources section">Learning Resources</a></li>
+                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                <li class="theme-switch" role="button" tabindex="0" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </li>
             </ul>
-            <div class="theme-switch">
-                <i class="fas fa-moon"></i>
-            </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="content">
-            <h1>Mohammad Saeed Ibtikar</h1>
-            <p>Software Engineer & Data Scientist</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+    <main role="main">
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="content">
+                <h1>Mohammad Saeed Ibtikar</h1>
+                <p>Software Engineer & Data Scientist</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a passionate Software Engineer and Data Scientist with expertise in building scalable applications and implementing machine learning solutions. With a strong foundation in both frontend and backend development, I strive to create impactful solutions that make a difference.</p>
-                <a href="MohammadSaeedCV2025.pdf" class="download-cv" target="_blank">Download CV</a>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Software Engineer and Data Scientist with expertise in building scalable applications and implementing machine learning solutions. With a strong foundation in both frontend and backend development, I strive to create impactful solutions that make a difference.</p>
+                    <a href="MohammadSaeedCV2025.pdf" class="download-cv" target="_blank">Download CV</a>
+                </div>
+                <div class="about-image">
+                    <img src="22.jpg" alt="Mohammad Saeed Ibtikar">
+                </div>
             </div>
-            <div class="about-image">
-                <img src="22.jpg" alt="Mohammad Saeed Ibtikar">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Skills & Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Web Technologies</h3>
-                <ul>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>HTML5/CSS3</li>
-                    <li>Django</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Data Science</h3>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>Deep Learning</li>
-                    <li>Data Analysis</li>
-                    <li>Natural Language Processing</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>Docker</li>
-                    <li>AWS</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2>Experience & Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Senior Software Engineer</h3>
-                    <p class="company">Tech Company</p>
-                    <p class="date">2023 - Present</p>
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
                     <ul>
-                        <li>Led development of scalable web applications</li>
-                        <li>Implemented machine learning solutions</li>
-                        <li>Mentored junior developers</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>HTML5/CSS3</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Data Analysis</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>MongoDB</li>
                     </ul>
                 </div>
             </div>
-            <!-- Add more experience items -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-        <h2>Blog & Insights</h2>
-        <div class="blog-categories">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="programming">Programming</button>
-            <button class="category-btn" data-category="data-science">Data Science</button>
-            <button class="category-btn" data-category="education">Education</button>
-        </div>
-        <div class="blog-grid">
-            <!-- Blog posts will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Featured Projects</h2>
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="ml">Machine Learning</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-        </div>
-        <div class="projects-grid">
-            <!-- Projects will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Get in Touch</h2>
-        <div class="contact-content">
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <p>saeedibtikar1999@gmail.com</p>
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2>Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="company">Tech Company</p>
+                        <p class="date">2023 - Present</p>
+                        <ul>
+                            <li>Led development of scalable web applications</li>
+                            <li>Implemented machine learning solutions</li>
+                            <li>Mentored junior developers</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Tehran, Iran</p>
+                <!-- Add more experience items -->
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section" aria-labelledby="blog-heading">
+            <h2 id="blog-heading">Blog & Insights</h2>
+            <div class="blog-search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" 
+                       placeholder="Search articles by title, category, or content..." 
+                       id="blog-search-input"
+                       aria-label="Search articles">
+            </div>
+            <div class="blog-categories" role="tablist" aria-label="Blog categories">
+                <button class="category-btn active" 
+                        role="tab" 
+                        aria-selected="true" 
+                        data-category="all">All</button>
+                <button class="category-btn" 
+                        role="tab" 
+                        aria-selected="false" 
+                        data-category="programming">Programming</button>
+                <button class="category-btn" 
+                        role="tab" 
+                        aria-selected="false" 
+                        data-category="data-science">Data Science</button>
+                <button class="category-btn" 
+                        role="tab" 
+                        aria-selected="false" 
+                        data-category="education">Education</button>
+            </div>
+            <div class="blog-grid" role="tabpanel" aria-label="Blog posts">
+                <!-- Blog posts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- AI Tools Section -->
+        <section id="ai-tools" class="ai-tools-section">
+            <h2>AI Tools Directory</h2>
+            <div class="ai-tools-grid">
+                <!-- Best AI Tools 2025 -->
+                <div class="ai-tool-category">
+                    <h3>Best AI Tools 2025</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://openai.com/gpt-5" target="_blank" rel="noopener noreferrer">GPT-5</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Latest language model from OpenAI with unprecedented reasoning capabilities and multimodal understanding.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Language</span>
+                                <span class="ai-tool-tag">Reasoning</span>
+                                <span class="ai-tool-tag">Multimodal</span>
+                            </div>
+                        </div>
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://openai.com/dall-e-3" target="_blank" rel="noopener noreferrer">DALL-E 3 Pro</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Advanced image generation with perfect anatomy, custom styles, and animation capabilities.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Image</span>
+                                <span class="ai-tool-tag">Animation</span>
+                                <span class="ai-tool-tag">Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI for Programming -->
+                <div class="ai-tool-category">
+                    <h3>AI for Programming</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot X</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Advanced code completion with full project context understanding and architecture suggestions.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Coding</span>
+                                <span class="ai-tool-tag">Assistance</span>
+                                <span class="ai-tool-tag">IDE</span>
+                            </div>
+                        </div>
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://aws.amazon.com/codewhisperer" target="_blank" rel="noopener noreferrer">CodeWhisperer Pro</a>
+                                <span class="rating">★★★★☆</span>
+                            </div>
+                            <p class="ai-tool-description">Amazon's AI coding assistant with deep AWS integration and security-first suggestions.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">AWS</span>
+                                <span class="ai-tool-tag">Security</span>
+                                <span class="ai-tool-tag">Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI for Photo Editing -->
+                <div class="ai-tool-category">
+                    <h3>AI for Photo Editing</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://www.adobe.com/products/firefly" target="_blank" rel="noopener noreferrer">Adobe Firefly</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Professional-grade AI image editing with seamless Photoshop integration and style transfer.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Adobe</span>
+                                <span class="ai-tool-tag">Professional</span>
+                                <span class="ai-tool-tag">Creative</span>
+                            </div>
+                        </div>
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://skylum.com/luminar-neo" target="_blank" rel="noopener noreferrer">Luminar Neo AI</a>
+                                <span class="rating">★★★★☆</span>
+                            </div>
+                            <p class="ai-tool-description">Advanced photo enhancement with smart object removal and sky replacement.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Photography</span>
+                                <span class="ai-tool-tag">Enhancement</span>
+                                <span class="ai-tool-tag">Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI for Content Writing -->
+                <div class="ai-tool-category">
+                    <h3>AI for Content Writing</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://www.jasper.ai" target="_blank" rel="noopener noreferrer">Jasper AI Pro</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Enterprise-grade content generation with brand voice customization and SEO optimization.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Content</span>
+                                <span class="ai-tool-tag">Marketing</span>
+                                <span class="ai-tool-tag">SEO</span>
+                            </div>
+                        </div>
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://www.copy.ai" target="_blank" rel="noopener noreferrer">Copy.ai Enterprise</a>
+                                <span class="rating">★★★★☆</span>
+                            </div>
+                            <p class="ai-tool-description">Specialized in marketing copy with emotional intelligence and conversion optimization.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Marketing</span>
+                                <span class="ai-tool-tag">Copywriting</span>
+                                <span class="ai-tool-tag">Sales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI for Video Production -->
+                <div class="ai-tool-category">
+                    <h3>AI for Video Production</h3>
+                    <div class="ai-tools-list">
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://runwayml.com" target="_blank" rel="noopener noreferrer">Runway ML</a>
+                                <span class="rating">★★★★★</span>
+                            </div>
+                            <p class="ai-tool-description">Professional video editing with AI-powered effects, motion tracking, and scene generation.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Video</span>
+                                <span class="ai-tool-tag">Effects</span>
+                                <span class="ai-tool-tag">Motion</span>
+                            </div>
+                        </div>
+                        <div class="ai-tool-item">
+                            <div class="ai-tool-name">
+                                <a href="https://www.synthesia.io" target="_blank" rel="noopener noreferrer">Synthesia Pro</a>
+                                <span class="rating">★★★★☆</span>
+                            </div>
+                            <p class="ai-tool-description">AI video generation with custom avatars and multilingual voice synthesis.</p>
+                            <div class="ai-tool-tags">
+                                <span class="ai-tool-tag">Avatar</span>
+                                <span class="ai-tool-tag">Voice</span>
+                                <span class="ai-tool-tag">Synthesis</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Learning Hub Section -->
+        <section id="learning-hub" class="learning-hub-section">
+            <h2>Learning Hub</h2>
+            
+            <!-- Career Path Visualizer -->
+            <div class="career-path">
+                <h3>Web Development Career Path</h3>
+                <div class="path-timeline">
+                    <div class="path-node active">
+                        <div class="path-content">
+                            <h4>Frontend Fundamentals</h4>
+                            <p>Master HTML, CSS, and JavaScript basics</p>
+                            <div class="path-skills">
+                                <span class="ai-tool-tag">HTML5</span>
+                                <span class="ai-tool-tag">CSS3</span>
+                                <span class="ai-tool-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-node">
+                        <div class="path-content">
+                            <h4>Frontend Frameworks</h4>
+                            <p>Learn modern frameworks and state management</p>
+                            <div class="path-skills">
+                                <span class="ai-tool-tag">React</span>
+                                <span class="ai-tool-tag">Vue</span>
+                                <span class="ai-tool-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-node">
+                        <div class="path-content">
+                            <h4>Backend Development</h4>
+                            <p>Build server-side applications and APIs</p>
+                            <div class="path-skills">
+                                <span class="ai-tool-tag">Node.js</span>
+                                <span class="ai-tool-tag">Express</span>
+                                <span class="ai-tool-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-node">
+                        <div class="path-content">
+                            <h4>DevOps & Deployment</h4>
+                            <p>Learn cloud services and CI/CD pipelines</p>
+                            <div class="path-skills">
+                                <span class="ai-tool-tag">AWS</span>
+                                <span class="ai-tool-tag">Docker</span>
+                                <span class="ai-tool-tag">GitHub Actions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming Quiz -->
+            <div class="quiz-section">
+                <h3>Programming Quiz</h3>
+                <div class="quiz-progress">
+                    <div class="progress-text">Progress: <span id="quiz-score">0</span>/5</div>
+                    <div class="progress-bar-quiz">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="quiz-card" data-quiz-id="1">
+                    <h4>JavaScript Fundamentals</h4>
+                    <p>What will be the output of: console.log(typeof typeof 1)?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">
+                            <code>string</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>number</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>undefined</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>object</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-card" data-quiz-id="2" style="display: none;">
+                    <h4>Array Methods</h4>
+                    <p>Which method would you use to add elements to the beginning of an array?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <code>push()</code>
+                        </div>
+                        <div class="quiz-option" data-correct="true">
+                            <code>unshift()</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>shift()</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>pop()</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-card" data-quiz-id="3" style="display: none;">
+                    <h4>ES6 Features</h4>
+                    <p>What is the output of: [...'hello']?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option" data-correct="true">
+                            <code>['h', 'e', 'l', 'l', 'o']</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>'hello'</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>[hello]</code>
+                        </div>
+                        <div class="quiz-option">
+                            <code>TypeError</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button class="action-button quiz-prev" disabled>Previous</button>
+                    <button class="action-button quiz-next">Next</button>
+                </div>
+            </div>
+
+            <!-- Coding Challenges -->
+            <div class="challenges-section">
+                <h3>Coding Challenges</h3>
+                <div class="challenges-filter">
+                    <button class="filter-btn active" data-difficulty="all">All</button>
+                    <button class="filter-btn" data-difficulty="easy">Easy</button>
+                    <button class="filter-btn" data-difficulty="medium">Medium</button>
+                    <button class="filter-btn" data-difficulty="hard">Hard</button>
+                </div>
+
+                <div class="challenge-card" data-difficulty="easy">
+                    <div class="challenge-header">
+                        <h4>Palindrome Checker</h4>
+                        <span class="challenge-difficulty difficulty-easy">Easy</span>
+                    </div>
+                    <p>Write a function that checks if a given string is a palindrome.</p>
+                    <div class="code-editor">
+                        <pre><code>function isPalindrome(str) {
+    // Your code here
+    
+}</code></pre>
+                    </div>
+                    <div class="test-cases">
+                        <p>Test Cases:</p>
+                        <code>isPalindrome("radar") // true</code>
+                        <code>isPalindrome("hello") // false</code>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="action-button run-code">Run Code</button>
+                        <button class="action-button reset-code">Reset</button>
+                        <button class="action-button show-solution">Show Solution</button>
+                    </div>
+                </div>
+
+                <div class="challenge-card" data-difficulty="medium">
+                    <div class="challenge-header">
+                        <h4>Binary Search</h4>
+                        <span class="challenge-difficulty difficulty-medium">Medium</span>
+                    </div>
+                    <p>Implement binary search algorithm to find an element in a sorted array.</p>
+                    <div class="code-editor">
+                        <pre><code>function binarySearch(arr, target) {
+    // Your code here
+    
+}</code></pre>
+                    </div>
+                    <div class="test-cases">
+                        <p>Test Cases:</p>
+                        <code>binarySearch([1,2,3,4,5], 3) // 2</code>
+                        <code>binarySearch([1,2,3,4,5], 6) // -1</code>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="action-button run-code">Run Code</button>
+                        <button class="action-button reset-code">Reset</button>
+                        <button class="action-button show-solution">Show Solution</button>
+                    </div>
+                </div>
+
+                <div class="challenge-card" data-difficulty="hard">
+                    <div class="challenge-header">
+                        <h4>Merge Sort Implementation</h4>
+                        <span class="challenge-difficulty difficulty-hard">Hard</span>
+                    </div>
+                    <p>Implement the merge sort algorithm.</p>
+                    <div class="code-editor">
+                        <pre><code>function mergeSort(arr) {
+    // Your code here
+    
+}</code></pre>
+                    </div>
+                    <div class="test-cases">
+                        <p>Test Cases:</p>
+                        <code>mergeSort([64, 34, 25, 12, 22, 11, 90])</code>
+                        <code>// [11, 12, 22, 25, 34, 64, 90]</code>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="action-button run-code">Run Code</button>
+                        <button class="action-button reset-code">Reset</button>
+                        <button class="action-button show-solution">Show Solution</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Resources Section -->
+        <section id="learning-resources" class="learning-resources-section">
+            <h2>Learning Resources</h2>
+            
+            <div class="resources-grid">
+                <!-- Online Learning Platforms -->
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <h4>Top Learning Platforms</h4>
+                        <span class="resource-tag">Courses</span>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="resource-link">
+                                <img src="assets/icons/coursera.svg" alt="Coursera" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Coursera - Deep Learning Specialization</span>
+                                    <span class="resource-desc">Comprehensive deep learning course by Andrew Ng</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.edx.org/learn/machine-learning" target="_blank" class="resource-link">
+                                <img src="assets/icons/edx.svg" alt="edX" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">edX - Machine Learning</span>
+                                    <span class="resource-desc">Stanford's famous ML course</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.deeplearning.ai/" target="_blank" class="resource-link">
+                                <img src="assets/icons/deeplearning.svg" alt="DeepLearning.AI" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">DeepLearning.AI</span>
+                                    <span class="resource-desc">Advanced AI courses and specializations</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Industry Tools -->
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <h4>Industry Tools</h4>
+                        <span class="resource-tag">Tools</span>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://jupyter.org/" target="_blank" class="resource-link">
+                                <img src="assets/icons/jupyter.svg" alt="Jupyter" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Jupyter Notebooks</span>
+                                    <span class="resource-desc">Interactive computing platform</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plotly.com/python/" target="_blank" class="resource-link">
+                                <img src="assets/icons/plotly.svg" alt="Plotly" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Plotly</span>
+                                    <span class="resource-desc">Interactive visualization library</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.kaggle.com/" target="_blank" class="resource-link">
+                                <img src="assets/icons/kaggle.svg" alt="Kaggle" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Kaggle</span>
+                                    <span class="resource-desc">Data science community and competitions</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Practice Platforms -->
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <h4>Practice Platforms</h4>
+                        <span class="resource-tag">Practice</span>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.kaggle.com/competitions" target="_blank" class="resource-link">
+                                <img src="assets/icons/kaggle.svg" alt="Kaggle Competitions" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Kaggle Competitions</span>
+                                    <span class="resource-desc">Real-world ML competitions</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://paperswithcode.com/" target="_blank" class="resource-link">
+                                <img src="assets/icons/papers.svg" alt="Papers with Code" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Papers with Code</span>
+                                    <span class="resource-desc">ML papers with implementations</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- MLOps Tools -->
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <h4>MLOps Tools</h4>
+                        <span class="resource-tag">MLOps</span>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.kubeflow.org/" target="_blank" class="resource-link">
+                                <img src="assets/icons/kubeflow.svg" alt="Kubeflow" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">Kubeflow</span>
+                                    <span class="resource-desc">ML toolkit for Kubernetes</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://aws.amazon.com/sagemaker/" target="_blank" class="resource-link">
+                                <img src="assets/icons/aws.svg" alt="AWS SageMaker" class="platform-icon">
+                                <div class="resource-info">
+                                    <span class="resource-title">AWS SageMaker</span>
+                                    <span class="resource-desc">Cloud ML platform</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>saeedibtikar1999@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Kabul, Afghanistan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>

@@ -33,6 +33,17 @@
                 <span>10 min read</span>
                 <span>Education, Programming, Teaching Methods</span>
             </div>
+            <div class="share-buttons">
+                <button class="share-button" onclick="shareOnTwitter()">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="share-button" onclick="shareOnLinkedIn()">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </button>
+                <button class="share-button" onclick="copyLink()">
+                    <i class="fas fa-link"></i> Copy Link
+                </button>
+            </div>
         </header>
 
         <div class="post-content">
@@ -80,5 +91,27 @@ print(f'Total: ${total_cost:.2f}')
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <script>
+        function shareOnTwitter() {
+            const text = "Check out this article: Effective Teaching Strategies for Programming";
+            const url = window.location.href;
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`);
+        }
+
+        function shareOnLinkedIn() {
+            const url = window.location.href;
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`);
+        }
+
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    alert('Link copied to clipboard!');
+                })
+                .catch(err => {
+                    console.error('Failed to copy link:', err);
+                });
+        }
+    </script>
 </body>
 </html>
